@@ -1,20 +1,29 @@
 import React from 'react';
 import Navbar from './Navbar';
-import HeroImg from '../assets/hero.png';
-import h from '../assets/h.png';
+import HeroImg from '../assets/hero.jpg';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="relative flex justify-end mr-1 mt-10 w-full h-auto">
-        <img src={h} className="w-full h-full object-cover" alt="background" />
-        
+      
+      <div className="relative flex justify-end mt-10 w-full h-[611px] mr-1">
+        <img src={HeroImg} className="w-full h-full object-cover" alt="background" />
+
         {/* Text Overlay */}
-        <div className="absolute top-0 left-0 flex items-center justify-left w-[46%] h-full bg-black bg-opacity-30">
-          <p className="text-white text-center text-xl md:text-2xl lg:text-3xl px-4">
-            This is a paragraph overlay on the image. You can add more text here, and it will center nicely on the image.
+        <div className="absolute top-0 left-0 flex flex-col justify-center w-[40%] h-full bg-black bg-opacity-40 p-8 space-y-8">
+          <p className="text-blue-500 bg-sky-100 text-center text-lg md:text-xl lg:text-2xl px-4 py-2 rounded">
+            Book Your Time, Simplify Your Life
           </p>
+
+          <h1 className="text-5xl font-semibold text-white leading-tight">
+            Orthopedic Treatment
+            <br />
+            <span>Acute Pain Relief</span>
+                  </h1>
+                   <button className='bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4  mt-1 mr-40 ml-25'>
+                      Read More 
+                   </button>
         </div>
       </div>
     </div>
