@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='h-12'>
           <nav className='flex items-center justify-between'>
               <div >
                   <a href='#home'>
