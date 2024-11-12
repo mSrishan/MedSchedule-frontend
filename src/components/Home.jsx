@@ -6,6 +6,7 @@ import CallIcon from '../assets/call.png';
 import DoctorIcon from '../assets/doctor.png';
 import OhIcon from '../assets/oh.png';
 import Home2 from '../assets/home2.jpg';
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -97,6 +98,23 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+<div className='bg-blue-900 px-10 py-12 mx-auto mt-20 rounded-lg shadow-lg max-w-3xl'>
+  <div className='flex flex-col items-center'>
+    <h1 className='text-white font-bold text-4xl text-center mb-6'>Subscribe for Daily Updates</h1>
+    <div className='flex items-center bg-white rounded-md p-2 w-full max-w-md'>
+      <input type='text' placeholder='Enter your email' className='p-2 rounded-l-md border-none outline-none flex-grow' />
+      <button className='bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-r-md shadow-lg mt-1 transition duration-300 ease-in-out transform hover:scale-105'>
+        Subscribe
+      </button>
+    </div>
+    <p className='text-white mt-6 text-center'>
+      Subscribe for daily updates and get the latest news, tips, and exclusive offers right in your inbox. Stay informed and never miss a thing!
+    </p>
+  </div>
+</div>
+
+      <Footer />
     </div>
   );
 }
