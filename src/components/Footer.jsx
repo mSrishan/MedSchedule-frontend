@@ -10,12 +10,12 @@ const Footer = () => {
         {/* Left-aligned Section with Logo, Name, and Paragraph */}
         <div className='flex flex-col items-start'>
           <div className='mb-4'>
-            <a href='#home'>
+            <a href='/home'>
               <img className='w-50 h-auto' src={logo} alt='logo' />
             </a>
           </div>
          
-          <p className='text-lg mb-6 text-blue-900 text-justify'>
+          <p className='text-sm mb-6 text-blue-900 text-justify'>
             Thank you for exploring MedSchedule! Stay tuned for more updates, features, and exclusive content. Connect with us on social media to stay updated.
           </p>
         </div>
@@ -23,16 +23,16 @@ const Footer = () => {
         {/* Quick Links Section */}
         <div className='flex flex-col items-start mt-10 ml-12'>
           <h2 className='text-xl font-semibold text-blue-900 mb-4'>Quick Links</h2>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-lg'>
+          <a href='/home' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Home
           </a>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-lg'>
+          <a href='/about' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             About
           </a>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-lg'>
+          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Services
           </a>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-lg'>
+          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Contact Us
           </a>
         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Newsletter Subscription Section */}
         <div className='flex flex-col items-start mt-10'>
           <h2 className='text-xl font-semibold text-blue-900 mb-4'>Newsletter</h2>
-          <p className='text-lg mb-4 text-blue-900'>
+          <p className='text-sm mb-4 text-blue-900'>
             Subscribe to our newsletter for the latest updates and exclusive offers.
           </p>
           <div className='flex'>
@@ -68,7 +68,7 @@ const Footer = () => {
               placeholder='Enter your email'
               className='px-4 py-2 border border-blue-900 rounded-l-lg text-blue-900 focus:outline-none'
             />
-            <button className='px-4 py-2 bg-blue-900 text-white rounded-r-lg hover:bg-blue-800 transition duration-300'>
+            <button className='px-4 py-2 bg-blue-900 text-white rounded-r-lg hover:bg-blue-400 transition duration-300'>
               Subscribe
             </button>
           </div>

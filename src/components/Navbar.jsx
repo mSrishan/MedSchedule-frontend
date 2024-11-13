@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between px-10">
         {/* Logo Section */}
         <div>
-          <a href="#home">
+          <a href="/home">
             <img className="w-40 h-auto" src={logo} alt="logo" />
           </a>
         </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
           <ul className="flex space-x-10">
             <li>
               <a
-                href="#home"
+                href="/home"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
                 Home
@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="/about"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
                 About
