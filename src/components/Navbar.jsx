@@ -26,19 +26,28 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#services"
+                href="/about"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
-                Services
+                About
                 <span className="absolute left-0 bottom-0 w-full h-[2px] bg-blue-600 scale-x-0 transition-transform duration-300 transform origin-left group-hover:scale-x-100"></span>
               </a>
             </li>
             <li>
               <a
-                href="/about"
+                href="/doctors"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
-                About
+                Doctors
+                <span className="absolute left-0 bottom-0 w-full h-[2px] bg-blue-600 scale-x-0 transition-transform duration-300 transform origin-left group-hover:scale-x-100"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/services"
+                className="relative inline-block text-gray-800 hover:text-blue-600 group"
+              >
+                Services
                 <span className="absolute left-0 bottom-0 w-full h-[2px] bg-blue-600 scale-x-0 transition-transform duration-300 transform origin-left group-hover:scale-x-100"></span>
               </a>
             </li>

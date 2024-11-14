@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About'; // Import About component
+import Services from './components/Services'; // Import Services component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
     </Router>
   );

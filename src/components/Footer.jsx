@@ -29,10 +29,13 @@ const Footer = () => {
           <a href='/about' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             About
           </a>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
+          <a href='/doctors' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
+            Doctors
+          </a>
+          <a href='/services' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Services
           </a>
-          <a href='#' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
+          <a href='/contactus' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Contact Us
           </a>
         </div>

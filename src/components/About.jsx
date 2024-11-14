@@ -9,8 +9,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const primaryColor = "#ffffff"; // White
-const accentColor = "#1976d2"; // Blue-400
-const darkAccentColor = "#0d47a1"; // Blue-900
+const accentColor = "#1f2c6b"; // Blue-400
+const darkAccentColor = "#0f1827"; // Blue-900
 
 function About() {
     return (
@@ -52,12 +52,12 @@ function About() {
 
                 {/* Founder Section */}
                 <Grid container spacing={4} sx={{ mb: 6 }}>
-                    <Grid item xs={12} md={6}>
-                        <Card sx={{ boxShadow: 'none', display: 'flex', alignItems: 'center', backgroundColor: primaryColor }}>
-                            <CardMedia component="img" image={aboutImg5} alt="Founder" sx={{ width: '50%', borderRadius: '50%' }} />
+                    <Grid item xs={15} md={6}>
+                        <Card sx={{ boxShadow: 'none', display: 'flex', alignItems: 'center', backgroundColor:'#c4c9e2'  }}>
+                            <CardMedia component="img" image={aboutImg5} alt="Founder" sx={{ width: '40%', borderRadius: '50%', padding: '5%' }} />
                             <CardContent sx={{ color: darkAccentColor }}>
                                 <Typography variant="body1" fontStyle="italic">"Advancing healthcare, one appointment at a time"</Typography>
-                                <Typography variant="subtitle2">Dr. Sarah Thompson, Founder</Typography>
+                                <Typography variant="subtitle2"><hr/><br />Dr. Sarah Thompson, Founder</Typography>
                             </CardContent>
                         </Card>
                     </Grid>
