@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="/contact"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
                 Contact Us
