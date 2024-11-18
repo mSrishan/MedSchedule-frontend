@@ -1,112 +1,113 @@
 import React from 'react';
 import CImg from '../assets/CImg.jpg';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Contact = () => {
   return (
     <div>
-      {/* Header Section */}
+      <Navbar />
+
+      {/* Hero Section */}
       <div
-        className="bg-cover bg-center text-white py-20 text-center h-[800px]"
+        className="relative h-[600px] bg-cover bg-center"
         style={{ backgroundImage: `url(${CImg})` }}
-          >
-    <div className='mt-[300px]'>          
-        <h1 className="text-4xl font-bold">Contact Informations</h1>
-        <p className="mt-4 max-w-2xl mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s.
-        </p>
-        <button className="mt-6 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded">
-          Contact Us
-        </button>
-    </div>
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+          <h1 className="text-5xl font-extrabold">Contact MedSchedule</h1>
+          <p className="mt-4 text-lg max-w-xl">
+            Need help managing your medical schedules? Have questions? Reach out to
+            us, and we’ll assist you promptly!
+          </p>
+          <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-lg text-lg font-semibold">
+            Get in Touch
+          </button>
+        </div>
       </div>
 
-      {/* Contact Details and Form Section */}
-      <div className="flex flex-wrap justify-between gap-8 py-16 px-8 bg-gray-100">
-        {/* Contact Details */}
-        <div className="flex-1 min-w-[300px]">
-          <div className="flex items-center mb-6">
-            <i className="fa fa-phone text-blue-500 text-xl mr-4"></i>
-            <span>+0123 4567 9876</span>
+      {/* Contact Details Section */}
+      <div className="bg-gray-50 py-16 px-8 lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Details */}
+          <div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+            <ul className="space-y-6 text-gray-700">
+              <li className="flex items-center">
+                <i className="fa fa-phone text-blue-600 text-2xl mr-4"></i>
+                <span className="text-lg">+0123 4567 9876</span>
+              </li>
+              <li className="flex items-center">
+                <i className="fa fa-envelope text-blue-600 text-2xl mr-4"></i>
+                <span className="text-lg">support@medschedule.com</span>
+              </li>
+              <li className="flex items-center">
+                <i className="fa fa-map-marker text-blue-600 text-2xl mr-4"></i>
+                <span className="text-lg">456 MedPark Avenue, Health City</span>
+              </li>
+            </ul>
           </div>
-          <div className="flex items-center mb-6">
-            <i className="fa fa-envelope text-blue-500 text-xl mr-4"></i>
-            <span>example@mail.com</span>
-          </div>
-          <div className="flex items-center mb-6">
-            <i className="fa fa-fax text-blue-500 text-xl mr-4"></i>
-            <span>+0123 4567 9876</span>
-          </div>
-          <div className="flex items-center mb-6">
-            <i className="fa fa-map-marker text-blue-500 text-xl mr-4"></i>
-            <span>123 Business Avenue, NYC</span>
-          </div>
-        </div>
 
-        {/* Contact Form */}
-        <div className="flex-1 min-w-[300px] bg-white p-8 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Send Message</h2>
-          <form className="space-y-4">
-            <div className="flex flex-wrap gap-4">
-              <input
-                type="text"
-                placeholder="Your name"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email address"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"
-                required
-              />
-            </div>
-            <div className="flex flex-wrap gap-4">
-              <input
-                type="text"
-                placeholder="Phone number"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"
-                required
-              />
+          {/* Contact Form */}
+          <div className="bg-white shadow-lg rounded-lg p-8">
+            <h2 className="text-2xl font-bold mb-4">Send Us a Message</h2>
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
+                  required
+                />
+              </div>
               <input
                 type="text"
                 placeholder="Subject"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
               />
-            </div>
-            <textarea
-              placeholder="Message"
-              rows="5"
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"
-              required
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded"
-            >
-              Send Message
-            </button>
-          </form>
+              <textarea
+                placeholder="Your Message"
+                rows="5"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full py-3 bg-blue-600 hover:bg-blue-700 transition text-white font-bold rounded-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 
       {/* Google Maps Section */}
-      <div className="text-center py-16">
-        <h2 className="text-xl font-semibold mb-4">Find Us on Google Maps</h2>
-        <p className="mb-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
-        <iframe
-          title="Google Maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096085!2d144.9537353153169!3d-37.81621897975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577fc96f74aee35!2s123%20Business%20Avenue%2C%20NYC!5e0!3m2!1sen!2s!4v1605945292645!5m2!1sen!2s"
-          width="100%"
-          height="400"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+      <div className="bg-gray-100 py-16">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-gray-800">Our Location</h2>
+          <p className="mt-2 text-lg text-gray-600">
+            Visit our office at 456 MedPark Avenue, Health City.
+          </p>
+        </div>
+        <div className="mt-8 flex justify-center">
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096085!2d144.9537353153169!3d-37.81621897975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577fc96f74aee35!2s456%20MedPark%20Avenue%2C%20Health%20City!5e0!3m2!1sen!2s!4v1605945292645!5m2!1sen!2s"
+            className="w-[90%] md:w-[75%] h-[400px] border-0 rounded-lg"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

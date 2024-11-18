@@ -4,6 +4,8 @@ import Home from './components/Home';
 import About from './components/About'; // Import About component
 import Services from './components/Services'; // Import Services component
 import Contact from './components/Contact'; // Import Contact component
+import Appointment from './components/Appointment'; // Import Appointments component
+import Doctors from './components/Doctors';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/appointment' element={<Appointment />} />
+        <Route path='/doctors' element={<Doctors />} />
       </Routes>
     </Router>
   );
