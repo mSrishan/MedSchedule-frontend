@@ -23,7 +23,7 @@ const Footer = () => {
         {/* Quick Links Section */}
         <div className='flex flex-col items-start mt-10 ml-12'>
           <h2 className='text-xl font-semibold text-blue-900 mb-4'>Quick Links</h2>
-          <a href='/home' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
+          <a href='/' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>
             Home
           </a>
           <a href='/about' className='text-blue-900 hover:text-blue-600 mb-2 transition duration-300 text-sm'>

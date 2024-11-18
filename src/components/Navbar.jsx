@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between px-10">
         {/* Logo Section */}
         <div>
-          <a href="/home">
+          <a href="/">
             <img className="w-40 h-auto" src={logo} alt="logo" />
           </a>
         </div>
