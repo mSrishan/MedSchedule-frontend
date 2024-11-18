@@ -24,7 +24,7 @@ const Navbar = () => {
           <ul className="flex space-x-10">
             <li>
               <a
-                href="/home"
+                href="/"
                 className="relative inline-block text-gray-800 hover:text-blue-600 group"
               >
                 Home
