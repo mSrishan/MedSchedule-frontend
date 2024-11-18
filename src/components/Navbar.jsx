@@ -1,11 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleBooking = () => {
-  navigate('/appointment'); // Navigate to the /appointment page
+    navigate('/appointment'); // Navigate to the /appointment page
   };
+
   return (
     <div className="bg-white shadow-md py-4">
       <nav className="flex items-center justify-between px-10">
@@ -71,7 +74,8 @@ const Navbar = () => {
         <div>
           <button
             onClick={handleBooking}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+          >
             Appointments +
           </button>
         </div>
