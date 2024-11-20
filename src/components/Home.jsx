@@ -9,6 +9,7 @@ import Home2 from '../assets/home2.jpg';
 import Footer from './Footer';
 
 const Home = () => {
+  
   return (
     <div>
       <Navbar />

@@ -6,6 +6,8 @@ import Services from './components/Services'; // Import Services component
 import Contact from './components/Contact'; // Import Contact component
 import Appointment from './components/Appointment'; // Import Appointments component
 import Doctors from './components/Doctors';
+import Login from './components/Login';
+import Signup from './components/Signup';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/appointment' element={<Appointment />} />
         <Route path='/doctors' element={<Doctors />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </Router>
   );
