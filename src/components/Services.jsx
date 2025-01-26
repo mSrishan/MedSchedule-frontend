@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import SImg1 from '../assets/SImg1.jpg';
@@ -21,107 +21,114 @@ import SImg16 from '../assets/SImg16.jpg';
 const Services = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [cardData, setCardData] = useState([]);
 
-  const cardData = [
-    // Medical specialties
-    {
-      image: SImg1,
-      heading: "Cardiology",
-      description: "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
-      category: "Medical"
-    },
-    {
-      image: SImg2,
-      heading: "Dermatology",
-      description: "Dermatology is the branch of medicine dealing with the skin, nails, hair and its diseases.",
-      category: "Medical"
-    },
-    {
-      image: SImg3,
-      heading: "Neurology",
-      description: "Neurology is a branch of medicine dealing with disorders of the nervous system.",
-      category: "Medical"
-    },
-    {
-      image: SImg4,
-      heading: "Orthopedics",
-      description: "Orthopedics is the branch of medicine concerned with the correction of deformities or functional impairments of the bones and joints.",
-      category: "Medical"
-    },
-    {
-      image: SImg5,
-      heading: "Pediatrics",
-      description: "Pediatrics is a branch of medicine that involves the medical care of infants, children, and adolescents.",
-      category: "Medical"
-    },
-    {
-      image: SImg6,
-      heading: "Psychiatry",
-      description: "Psychiatry is a branch of medicine that focuses on the diagnosis, treatment, and prevention of mental, emotional, and behavioral disorders.",
-      category: "Medical"
-    },
-    {
-      image: SImg7,
-      heading: "Oncology",
-      description: "Oncology is a branch of medicine that specializes in the diagnosis, treatment, and prevention of cancer.",
-      category: "Medical"
-    },
-    {
-      image: SImg8,
-      heading: "Endocrinology",
-      description: "Endocrinology is the study of the endocrine system and its diseases, focusing on hormone imbalances.",
-      category: "Medical"
-    },
-    {
-      image: SImg9,
-      heading: "Gastroenterology",
-      description: "Gastroenterology is the branch of medicine focused on the digestive system and its disorders.",
-      category: "Medical"
-    },
-    // Normal hospital services
-    {
-      image: SImg10,
-      heading: "Emergency Care",
-      description: "Emergency care involves immediate treatment for acute illnesses or injuries that require urgent attention.",
-      category: "Services"
-    },
-    {
-      image: SImg11,
-      heading: "Laboratory Services",
-      description: "Our hospital offers comprehensive lab services, including blood tests, urinalysis, and diagnostic imaging.",
-      category: "Services"
-    },
-    {
-      image: SImg12,
-      heading: "Surgical Services",
-      description: "We provide a wide range of surgical services, from minor procedures to complex surgeries performed by specialists.",
-      category: "Services"
-    },
-    {
-      image: SImg13,
-      heading: "Radiology",
-      description: "Radiology services include advanced imaging technologies like X-rays, CT scans, and MRI for accurate diagnosis.",
-      category: "Services"
-    },
-    {
-      image: SImg14,
-      heading: "Physical Therapy",
-      description: "Our physical therapy services are designed to help patients recover mobility and function after injuries or surgeries.",
-      category: "Services"
-    },
-    {
-      image: SImg15,
-      heading: "Maternity Care",
-      description: "Maternity care includes prenatal, postnatal, and labor & delivery services to ensure the well-being of both mother and baby.",
-      category: "Services"
-    },
-    {
-      image: SImg16,
-      heading: "Pharmacy",
-      description: "Our pharmacy provides essential medications and consultations to ensure safe and effective treatment plans.",
-      category: "Services"
-    },
-  ];
+  // Simulate fetching data using useEffect
+  useEffect(() => {
+    // Simulating an API call to fetch data
+    const fetchedData = [
+      // Medical specialties
+      {
+        image: SImg1,
+        heading: "Cardiology",
+        description: "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
+        category: "Medical"
+      },
+      {
+        image: SImg2,
+        heading: "Dermatology",
+        description: "Dermatology is the branch of medicine dealing with the skin, nails, hair and its diseases.",
+        category: "Medical"
+      },
+      {
+        image: SImg3,
+        heading: "Neurology",
+        description: "Neurology is a branch of medicine dealing with disorders of the nervous system.",
+        category: "Medical"
+      },
+      {
+        image: SImg4,
+        heading: "Orthopedics",
+        description: "Orthopedics is the branch of medicine concerned with the correction of deformities or functional impairments of the bones and joints.",
+        category: "Medical"
+      },
+      {
+        image: SImg5,
+        heading: "Pediatrics",
+        description: "Pediatrics is a branch of medicine that involves the medical care of infants, children, and adolescents.",
+        category: "Medical"
+      },
+      {
+        image: SImg6,
+        heading: "Psychiatry",
+        description: "Psychiatry is a branch of medicine that focuses on the diagnosis, treatment, and prevention of mental, emotional, and behavioral disorders.",
+        category: "Medical"
+      },
+      {
+        image: SImg7,
+        heading: "Oncology",
+        description: "Oncology is a branch of medicine that specializes in the diagnosis, treatment, and prevention of cancer.",
+        category: "Medical"
+      },
+      {
+        image: SImg8,
+        heading: "Endocrinology",
+        description: "Endocrinology is the study of the endocrine system and its diseases, focusing on hormone imbalances.",
+        category: "Medical"
+      },
+      {
+        image: SImg9,
+        heading: "Gastroenterology",
+        description: "Gastroenterology is the branch of medicine focused on the digestive system and its disorders.",
+        category: "Medical"
+      },
+      // Normal hospital services
+      {
+        image: SImg10,
+        heading: "Emergency Care",
+        description: "Emergency care involves immediate treatment for acute illnesses or injuries that require urgent attention.",
+        category: "Services"
+      },
+      {
+        image: SImg11,
+        heading: "Laboratory Services",
+        description: "Our hospital offers comprehensive lab services, including blood tests, urinalysis, and diagnostic imaging.",
+        category: "Services"
+      },
+      {
+        image: SImg12,
+        heading: "Surgical Services",
+        description: "We provide a wide range of surgical services, from minor procedures to complex surgeries performed by specialists.",
+        category: "Services"
+      },
+      {
+        image: SImg13,
+        heading: "Radiology",
+        description: "Radiology services include advanced imaging technologies like X-rays, CT scans, and MRI for accurate diagnosis.",
+        category: "Services"
+      },
+      {
+        image: SImg14,
+        heading: "Physical Therapy",
+        description: "Our physical therapy services are designed to help patients recover mobility and function after injuries or surgeries.",
+        category: "Services"
+      },
+      {
+        image: SImg15,
+        heading: "Maternity Care",
+        description: "Maternity care includes prenatal, postnatal, and labor & delivery services to ensure the well-being of both mother and baby.",
+        category: "Services"
+      },
+      {
+        image: SImg16,
+        heading: "Pharmacy",
+        description: "Our pharmacy provides essential medications and consultations to ensure safe and effective treatment plans.",
+        category: "Services"
+      },
+    ];
+
+    setCardData(fetchedData); // Update the state with fetched data
+  }, []); // The empty dependency array means it runs only once when the component mounts
 
   // Filter card data based on search and selected category
   const filteredCards = cardData.filter(({ heading, description, category }) =>
@@ -129,6 +136,11 @@ const Services = () => {
       description.toLowerCase().includes(searchQuery.toLowerCase())) &&
     (selectedCategory ? category === selectedCategory : true)
   );
+
+  // Log when searchQuery or selectedCategory changes
+  useEffect(() => {
+    console.log('Search query or category changed');
+  }, [searchQuery, selectedCategory]);
 
   return (
     <div>
@@ -211,6 +223,6 @@ const Services = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Services;
